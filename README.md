@@ -31,12 +31,22 @@ Add `indent-class-properties` to the plugins section of your `.eslintrc` configu
 ```
 
 
-Then configure the rules you want to use under the rules section.
+Then configure the rule under the rules section in your `.eslintrc` file. Here the indent size is set to 4 spaces.
 
 ```json
 {
     "rules": {
-        "indent-class-properties/indent": 4
+        "indent-class-properties/indent": ["error", 4]
+    }
+}
+```
+
+You can also use tabbed indentation:
+
+```json
+{
+    "rules": {
+        "indent-class-properties/indent": ["error", "tab"]
     }
 }
 ```
